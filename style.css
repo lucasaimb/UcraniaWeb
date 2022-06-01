@@ -20,5 +20,21 @@ main{
     height: 64vh;
     background-color: #AC80A0;
     margin: 12vh 6vw 12vh 6vw;
-    border-radius: 1vh;
+    border-radius: 1vh;*
+}
+
+h1{
+    font-size: 4.42vw;
+    font-family: 'Alfa Slab One', cursive;
+    color: #FFFFFF;
+    padding: 10vh 0 0 6.5vw;
+    width: 40%;
+}
+
+p{
+    color: #FFFFFF;
+    font-size: 1.73vw;
+    font-family: 'Roboto Serif', serif;
+    width: 40%;
+    padding: 3% 0 0 7%;
 }
