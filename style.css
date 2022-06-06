@@ -1,7 +1,4 @@
 body{
-   
-    width: 100vw;
-    height: 120vh;
     background-color:white;
 }
 
@@ -18,10 +15,8 @@ main{
     margin: 12vh 6vw 12vh 4vw;
     border-radius: 1vh;
     
-}/*
-max-height: 84vh;
-width: 88vw;
-height: 84vh;*/
+}
+
 h1{
     font-size: 4.42vw;
     font-family: 'Alfa Slab One', cursive;
@@ -36,7 +31,7 @@ p{
     color: #FFFFFF;
     font-size: 2vw;
     font-family: 'Roboto Serif', serif;
-    padding: 15% 0 0 7%;
+    padding: 15% 0 0 15%;
     
 }
 
@@ -46,13 +41,11 @@ display: block;
 padding-bottom: 10vh;
 }
 
-img{
+#refugiados{
    width: 30%;
    height: 30%;
     border-radius: 1vh;
-    margin-top: 8%;
-    
-    
+    margin-top: 11%;
     
 }
 
@@ -60,4 +53,35 @@ img{
     display: flex;
     flex-direction: row;
     gap: 10vw;
+}
+
+@media only screen and (max-width: 700px){
+    #contein{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    #refugiados{
+        width: 40%;
+        height: 40%;
+        margin: auto;
+        margin-bottom: 7%;
+        margin-top: 7%;
+    }
+    article{
+        padding-bottom: 0;
+    }
+    
+    main{
+        width: 50%;
+        margin: auto;
+        margin-top: 15%;
+     
+    }
+    
+    h1{
+        margin-left: 5%;
+        width: 100%;
+    }
+
 }
