@@ -1,12 +1,42 @@
 body{
+    width: 100%;
+    height: 100%;
     background-color:white;
 }
 
 header{
-    width: 100vw;
-    height: 12vh;
+    width: 100%;
+    height: 110px;
     background-color: #5692D1 ;
-   
+    display: flex;
+    flex-direction: row;
+}
+
+#logo{
+    height: 70%;
+    padding: 1vh;
+}
+
+nav{
+    padding: 30px;
+}
+
+ul{
+   display: flex;
+}
+
+li{
+    padding: 7px;
+    margin: 7px;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 22px;
+}
+
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #df76c3;
 }
 
 main{
@@ -23,8 +53,18 @@ h1{
     color: #FFFFFF;
     padding: 10vh 0 0 6.5vw;
     width: 44%;
-    
-    
+}
+
+article{
+width: 44vw;
+display: block;
+padding-bottom: 10vh;
+}
+
+#contein{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
 }
 
 p{
@@ -35,12 +75,6 @@ p{
     
 }
 
-article{
-width: 44vw;
-display: block;
-padding-bottom: 10vh;
-}
-
 #refugiados{
    width: 30%;
    height: 30%;
@@ -49,13 +83,11 @@ padding-bottom: 10vh;
     
 }
 
-#contein{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
+.menu{
+    
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 768px){
     #contein{
         flex-direction: column;
         gap: 0;
@@ -70,18 +102,57 @@ padding-bottom: 10vh;
     }
     article{
         padding-bottom: 0;
+        width: 80%;
+        padding-left: 5%;
+        justify-content: center;
     }
     
     main{
-        width: 50%;
-        margin: auto;
-        margin-top: 15%;
-     
+        wid th: 50%;
+        ma rgin: auto;
+        mar gin-top: 15%;
+        margin: 5vh 4vw 6vh 5vw;
+        
     }
     
     h1{
-        margin-left: 5%;
-        width: 100%;
+        font-size: 7vw;
+        width: 80%;
+        padding: 10vh 0 0 24%;
+        display: flex;
+        
     }
+    p{
+        font-size: 3vw;
+        padding-top: 5%;
+        text-align: justify-all;
+    }
+    
+    nav{
+        display: none;
+    }
+    .menu{
+        position:absolute;
+        top: 13px;
+        right: 10px;
+        width: 40px;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+    .menu > div {
+        background: #e5e5e5;
+        height: 4px;
+        width: 80%;
+        margin: 5px;
 
+    }
+}
+
+@media only screen and (max-height: 535px){
+    #refugiados{
+        display: none;
+    }
+    article{
+        padding-bottom: 10%;
+    }
 }
