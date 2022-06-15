@@ -4,6 +4,10 @@ body{
     background-color:white;
 }
 
+/*----------------------------------*/
+/*---Ínicio do cabeçalho inicial----*/
+/*----------------------------------*/
+
 header{
     width: 100%;
     height: 110px;
@@ -38,6 +42,16 @@ li:hover{
     text-decoration: underline;
     color: #df76c3;
 }
+
+/*---------------------------------*/
+/*---Final do cabeçalho inicial----*/
+/*---------------------------------*/
+
+/*------------------------------------------------------------------------DividerSemantico----------------------------------------------------------------------------------------*/
+
+/*--------------------------*/
+/*--Início Bloco Principal--*/
+/*--------------------------*/
 
 main{
 
@@ -82,8 +96,29 @@ p{
     margin-top: 11%;
     
 }
+/*--------------------------*/
+/*--Final do Bloco principal*/
+/*--------------------------*/
+
+/*---------------------------------------------------------------------------------DividerSemantico-------------------------------------------------------------------------------------------*/
+
+/*----------------*/
+/*----Medias------*/  
+/*----------------*/
 
 @media only screen and (max-width: 700px){
+    
+    main{
+        margin: 5vh 4vw 6vh 5vw;
+    }
+    
+    h1{
+        font-size: 7vw;
+        width: 80%;
+        padding: 10vh 0 0 24%;
+        display: flex;  
+    }
+
     #contein{
         flex-direction: column;
         gap: 0;
@@ -96,6 +131,7 @@ p{
         margin-bottom: 7%;
         margin-top: 7%;
     }
+
     article{
         padding-bottom: 0;
         width: 80%;
@@ -103,48 +139,51 @@ p{
         justify-content: center;
     }
     
-    main{
-        margin: 5vh 4vw 6vh 5vw;
-    }
-    
-    h1{
-        font-size: 7vw;
-        width: 80%;
-        padding: 10vh 0 0 24%;
-        display: flex;
-        
-    }
     p{
         font-size: 3vw;
         padding-top: 5%;
         text-align: justify-all;
     }
-    
-    nav{
-        display: none;
-    }
-    .menu{
-        position:absolute;
-        top: 10px;
-        right: 10px;
-        width: 40px;
-        cursor: pointer;
-    }
-    .menu > div {
-        background: #e5e5e5;
-        height: 4px;
-        width: 80%;
-        margin: 5px;
 
-    }
+/*---------------------------------*/
+/*----------Media Header-----------*/
+/*---------------------------------*/
+#logo{
+    margin: 0;
+    padding: 10px 20px !important;
+    width: 80px;
+    height: 50px;
+}
 
-    #logo{
-        margin: 0;
-        padding: 10px 20px !important;
-        width: 80px;
-        height: 50px;
-    }
+.menu{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    cursor: pointer;
+}
 
+.menu > div {
+    background: #e5e5e5;
+    height: 4px;
+    width: 80%;
+    margin: 5px;
+
+}
+
+nav{
+    display: none;
+}
+
+ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    vertical-align: middle;
+}
+
+/*--Javascript no media--*/
     header.on{
         position: absolute;
         height: 100%;
@@ -157,14 +196,11 @@ p{
         display: flex;
         height: 100%;
     }
-    ul{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        vertical-align: middle;
-    }
 }
+
+/*--------------------------------------*/
+/*----------Media Vertical--------------*/
+/*--------------------------------------*/
 
 @media only screen and (max-height: 570px ) and (max-width: 700px){
     #refugiados{
